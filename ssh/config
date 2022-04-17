@@ -1,0 +1,17 @@
+# Work github account: (work)
+Host github.com
+   HostName github.com
+   IdentityFile ~/.ssh/id_rsa
+   IdentitiesOnly yes
+
+# Personal github account: (personal)
+Host github-subaruuuu
+   HostName github.com
+   IdentityFile ~/.ssh/id_rsa_github_subaruuuu
+   IdentitiesOnly yes
+
+# Personal gitlab account: (personal)
+Host gitlab.com
+   HostName gitlab.com
+   IdentityFile ~/.ssh/id_rsa_gitlab
+   IdentitiesOnly yes
