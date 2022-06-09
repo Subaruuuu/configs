@@ -4,13 +4,17 @@ end
 
 alias safechrome="open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security"
 
+alias gitlogger="git log --oneline -20 --graph"
+
+alias gitcp="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
+
 function nvm
     bass source /usr/local/opt/nvm/nvm.sh ';' nvm $argv
 end
 
-function tree
-	find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
-end
+#function tree
+#	find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+#end
 
 nvm -v
 
