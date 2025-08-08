@@ -8,6 +8,8 @@ alias gitlogger="git log --oneline -20 --graph"
 
 alias gitcp="git branch | grep '^\*' | cut -d' ' -f2 | pbcopy"
 
+alias gittemp="git commit -m "暫存""
+
 function nvm
     bass source /usr/local/opt/nvm/nvm.sh ';' nvm $argv
 end
